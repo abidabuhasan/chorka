@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Garments Quality Department - Defect Entry</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 150px;
+        text-align: left;
+      }
+      input[type="number"] {
+        width: 100px;
+      }
+      .defect-summary {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid #ccc;
+      }
+      .defect-summary h2 {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Garments Quality Department - Defect Entry</h1>
+      <form id="defect-entry-form">
+        <div>
+          <label for="unit">Unit:</label>
+          <input type="text" id="unit" name="unit">
+          <label for="line">Line:</label>
+          <input type="text" id="line" name="line">
+          <label for="buyer">Buyer:</label>
+          <input type="text" id="buyer" name="buyer">
+        </div>
+        <div>
+          <label for="color">Color:</label>
+          <input type="text" id="color" name="color">
+          <label for="style">Style:</label>
+          <input type="text" id="style" name="style">
+          <label for="item">Item:</label>
+          <input type="text" id="item" name="item">
+        </div>
+        <div>
+          <label for="defect_name_1">Defect 1 Name:</label>
+          <select id="defect_name_1" name="defect_name_1">
+            <option value="">--Select Defect--</option>
+            <option value="Defect 1">Defect 1</option>
+            <option value="Defect 2">Defect 2</option>
+            <option value="Defect 3">Defect 3</option>
+            <option value="Defect 4">Defect 4</option>
+            <option value="Defect 5">Defect 5</option>
+          </select>
+          <label for="defect_qty_1">Defect 1 Qty:</label>
+          <input type="number" id="defect_qty_1" name="defect_qty_1" min="0">
+          <label for="defect_name_2">Defect 2 Name:</label>
+          <select id="defect_name_2" name="defect_name_2">
+            <option value="">--Select Defect--</option>
+            <option value="Defect 1">Defect 1</option>
+            <option value="Defect 2">Defect 2</option>
+            <option value="Defect 3">Defect 3</option>
+            <option value="Defect 4">Defect 4</option>
+            <option value="Defect 5">Defect 5</option>
+          </select>
+          <label for="defect_qty_2">Defect 2 Qty:</label>
+          <input type="number" id="defect_qty_2" name="defect_qty_2" min="0">
+          <label for="defect_name_3">Defect 3 Name:</label>
+          <select id="defect_name_3" name="defect_name_3">
+            <option value="">--Select Defect--</option>
+            <option value="Defect 1">Defect 1</option>
+            <option value="Defect 2">Defect 2</option>
+            <option value="Defect 3">Defect 3</option>
+            <option value="Defect 4">Defect 4</option>
+            <option value="Defect 5">Defect 5</option>
+          </select>
+          <label for="defect_qty_3">Defect 3 Qty:</label>
+          <input type="number" id="defect_qty_3" name="defect_qty_3" min="0">
+          <label for="defect_name_4">Defect 4 Name:</label>
+          <select id="defect_name_4" name="defect_name_4">
+            <option value="">--Select Defect--</option>
+            <option value="Defect 1">Defect 1</option>
+            <option value="Defect 2">Defect 2</option>
+            <option value="Defect 3">Defect 3</option>
+            <option value="Defect 4">Defect 4</option>
+            <option value="Defect 5">Defect 5</option>
+          </select>
+          <label for="defect_qty_4">Defect 4 Qty:</label>
+          <input type="number" id="defect_qty_4" name="defect_qty_4" min="0">
+          <label for="defect_name_5">Defect 5 Name:</label>
+          <select id="defect_name_5" name="defect_name_5">
+            <option value="">--Select Defect--</option>
+            <option value="Defect 1">Defect 1</option>
+            <option value="Defect 2">Defect 2</option>
+            <option value="Defect 3">Defect 3</option>
+            <option value="Defect 4">Defect 4</option>
+            <option value="Defect 5">Defect 5</option>
+          </select>
+          <label for="defect_qty_5">Defect 5 Qty:</label>
+          <input type="number" id="defect_qty_5" name="defect_qty_5" min="0">
+          <label for="defect_name_6">Defect 6 Name:</label>
+          <select id="defect_name_6" name="defect_name_6">
+            <option value="">--Select Defect--</option>
+            <option value="Defect 1">Defect 1</option>
+            <option value="Defect 2">Defect 2</option>
+            <option value="Defect 3">Defect 3</option>
+            <option value="Defect 4">Defect 4</option>
+            <option value="Defect 5">Defect 5</option>
+          </select>
+          <label for="defect_qty_6">Defect 6 Qty:</label>
+          <input type="number" id="defect_qty_6" name="defect_qty_6" min="0">
+          <label for="defect_name_7">Defect 7 Name:</label>
+          <select id="defect_name_7" name="defect_name_7">
+<option value="">--Select Defect--</option>
+<option value="Defect 1">Defect 1</option>
+<option value="Defect 2">Defect 2</option>
+<option value="Defect 3">Defect 3</option>
+<option value="Defect 4">Defect 4</option>
+<option value="Defect 5">Defect 5</option>
+</select>
+<label for="defect_qty_7">Defect 7 Qty:</label>
+<input type="number" id="defect_qty_7" name="defect_qty_7" min="0">
+<label for="defect_name_8">Defect 8 Name:</label>
+<select id="defect_name_8" name="defect_name_8">
+<option value="">--Select Defect--</option>
+<option value="Defect 1">Defect 1</option>
+<option value="Defect 2">Defect 2</option>
+<option value="Defect 3">Defect 3</option>
+<option value="Defect 4">Defect 4</option>
+<option value="Defect 5">Defect 5</option>
+</select>
+<label for="defect_qty_8">Defect 8 Qty:</label>
+<input type="number" id="defect_qty_8" name="defect_qty_8" min="0">
+<label for="defect_name_9">Defect 9 Name:</label>
+<select id="defect_name_9" name="defect_name_9">
+<option value="">--Select Defect--</option>
+<option value="Defect 1">Defect 1</option>
+<option value="Defect 2">Defect 2</option>
+<option value="Defect 3">Defect 3</option>
+<option value="Defect 4">Defect 4</option>
+<option value="Defect 5">Defect 5</option>
+</select>
+<label for="defect_qty_9">Defect 9 Qty:</label>
+<input type="number" id="defect_qty_9" name="defect_qty_9" min="0">
+<label for="defect_name_10">Defect 10 Name:</label>
+<select id="defect_name_10" name="defect_name_10">
+<option value="">--Select Defect--</option>
+<option value="Defect 1">Defect 1</option>
+<option value="Defect 2">Defect 2</option>
+<option value="Defect 3">Defect 3</option>
+<option value="Defect 4">Defect 4</option>
+<option value="Defect 5">Defect 5</option>
+</select>
+<label for="defect_qty_10">Defect 10 Qty:</label>
+<input type="number" id="defect_qty_10" name="defect_qty_10" min="0">
+<div class="defect_total">
+<label for="total_defect_qty">Total Defect Qty:</label>
+<input type="number" id="total_defect_qty" name="total_defect_qty" readonly>
+</div>
+<div class="defect_percentage">
+<label for="defect_percentage">Defect Percentage:</label>
+<input type="text" id="defect_percentage" name="defect_percentage" readonly>
+</div>
+<div class="form_submit">
+<input type="submit" value="Submit">
+</div>
+</form>
+</div>
+</main>
+
+  </body>
+</html>
+
